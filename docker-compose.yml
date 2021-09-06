@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  international:
+    image: node:16-alpine
+    command: sh -c "yarn create react-app . && yarn && yarn start"
+    working_dir: /app
+    ports:
+      - 3000:3000
